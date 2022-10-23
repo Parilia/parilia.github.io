@@ -1,0 +1,20 @@
+body, html { min-height: 100%; }
+body {
+	color: white;
+	background: url(bg.jpg) center no-repeat;
+	background-size: cover;
+	background-color: #444;
+}
+p {
+	width: 40%;
+	background: rgba(0,0,0,0.6);
+	border: 5px double white;
+	margin: 0;
+	padding: 2px 2px 0 2px;
+	float: center;
+	line-height: 155%;
+	font-family: Sans-serif;
+}
+h1 {
+	margin-top: 0;
+}

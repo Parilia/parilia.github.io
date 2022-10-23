@@ -1,7 +1,6 @@
-body, html { min-height: 100%; }
+
 .body {
-	color: white;
-	background-size: cover;
+	color: #FFFFFF;
 	background-color: #1B1E21;
 }
 .p {

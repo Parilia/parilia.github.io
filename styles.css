@@ -4,14 +4,12 @@ height: 100%;
 .banner {
   width: 100%;
   height: auto;
+  position: relative;
+  text-align: center;
 }
 .banner img {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
   height: auto;
-  overflow: hidden;
 }
 .bottom-right {
   position: absolute;

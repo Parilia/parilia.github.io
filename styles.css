@@ -1,9 +1,9 @@
 body, html { min-height: 100%; }
 body {
 	color: white;
-	background: url(bg.jpg) center no-repeat;
+	/*background: url(bg.jpg) center no-repeat;*/
 	background-size: cover;
-	background-color: #444;
+	background-color: #565656;
 }
 p {
 	width: 40%;

@@ -7,7 +7,11 @@ height: 100%;
 }
 .banner img {
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   height: auto;
+  overflow: hidden;
 }
 body {
 	color: #FFFFFF;
@@ -24,3 +28,24 @@ p {
 h1 {
 	margin-top: 0;
 }
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1B1E21; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555555; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 

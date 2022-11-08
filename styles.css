@@ -26,7 +26,8 @@ p {
 	margin: 0;
 	padding: 2px 2px 0 2px;
 	line-height: 155%;
-	font-family: monospace;
+	font-family: Verdana,sans-serif;
+    font-size: 15px;
 }
 h1 {
 	margin-top: 0;
@@ -58,10 +59,11 @@ h1 {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
   overflow: hidden;
-  background-color: #333;
-  font-family: monospace;
+  background-color: #1f2226;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
 }
 
 li {
@@ -74,12 +76,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: monospace;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+  border-radius: 10px;
 }
 
 /* Image gallery */

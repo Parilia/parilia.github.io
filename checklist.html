@@ -45,6 +45,11 @@
     </br><code>CertUtil -hashfile pathToFileToCheck SHA256</code></p></br>
     So your should look something like this:
     </br><code>CertUtil -hashfile C:\Users\kayla\Desktop\Nobara-37-KDE-2023-04-02.iso SHA256</code></br>
+    <h3>Wayland or X11/Plasma</h3>
+    Simple answer is if you have an Nvidia graphics card then as it stands you should use X11 as Wayland is not fully supported with nvidia.</br>
+    I personally have my startup skip logging in and to do this you can access system settings>startup and shutdown>login screen(SDDM)>behavior.</br>
+    Changing this to auto loggin as your user and with session plasma(x11) will auto log you in usisng that.</br>
+    Otherwise make sure x11/plasma is selected on the login screen. You will want to be and have x11 before continuing with your configerations</br>
     <h3>Setting your NVIDIA Graphics card to default</h3>
     Follow the guide <a href="https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/#_step_8_edit_the_x11_configuration">here</a></br>
     If you find that /usr/share/X11/xorg.conf.d/nvidia.conf doesnt exist then use this file /etc/X11/xorg.conf.d/10-nvidia.conf and do not rename it. you will need to copy and paste it to /usr/share/X11/xorg.conf.d/   to do so you will need to open the file as an adminastrator(Right click in the file and open as admin)

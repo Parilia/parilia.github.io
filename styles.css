@@ -47,6 +47,14 @@ p-1 {
 h1 {
 	margin-top: 0;
 }
+h2  
+{
+    font-family: monospace;
+    font-size: 300%;
+    margin: auto;
+    width: 60%;
+}
+
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {

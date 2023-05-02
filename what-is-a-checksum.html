@@ -27,12 +27,12 @@ So in short a checksum is an exact sequence of letters and numbers used to check
 And why should you care? Thats a good question hypothetical person. Let say you are downloading a linux iso, this iso will become your operating system so its important we check it for errors as those errors may be unseen intially but could corrupt your install and make life rather difficult.<br><br>
 So to avoid this we use a checksum utility and compare the output with the checksum of the source (this is usually found on the downloads page alongside the iso).<br>
 <h3>Checksum on Windows</h3><br>
-First of all open comand prompt as an adminastrator,<br>
+First of all open command prompt as an administrator,<br>
 The CertUtil is a pre-installed Windows utility, that can be used to generate hash checksums,<br>we are going to use SHA256 for this example but there others such as MD5.<br>
 <br><code>CertUtil -hashfile pathToFileToCheck SHA256</code><br><br>
 So your should look something like this:
 <br><br><code>CertUtil -hashfile C:\Users\bob\Desktop\linuxdistro.iso SHA256</code><br><br>
-You will now need to compare yur output too your checksum from your source, if they match then you are set and if they dont you will have to re-download your iso. If you get further mismatches after that I suggest contactiong the distro.<br>
+You will now need to compare yur output too your checksum from your source, if they match then you are set and if they dont you will have to re-download your iso. If you get further mismatches after that I suggest contacting the distro.<br>
 <h3>Checksum on Linux</h3>
 As always this can be done via the console, first go to the directory of the iso.
 <br><br><code>cd ~/Documents</code><br><br>

@@ -76,7 +76,10 @@ p-1 a:hover {
  
 
 h1 {
-	margin-top: 0;
+	font-family: monospace;
+  font-size: 150%;
+  line-height: 35px;
+  text-align: center;
 }
 h2  
 {
@@ -88,7 +91,8 @@ h2
 h3
 {
   font-family: monospace;
-  font-size: 150%; 
+  font-size: 150%;
+  line-height: 35px; 
 }
 
 /*scrollbar*/

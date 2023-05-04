@@ -143,9 +143,9 @@ nav-bar li a {
   font-size: 15px;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to #111111 (black) on hover */
 nav-bar li a:hover {
-  background-color: #111;
+  background-color: #111111;
   border-radius: 10px;
 }
 

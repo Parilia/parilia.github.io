@@ -6,32 +6,32 @@
   <description>A place for my journey</description>
   <item>
     <title>Starting my journey - My perfect DE</title>
-    <link>https://parilia.github.io/starting-my-journey-to-my-perfect-de</link>
+    <link>https://parilia.github.io/a/linux/starting-my-journey-to-my-perfect-de</link>
     <description>Join me in my madness at trying to achieve the perfect desktop environment.</description>
   </item>
   <item>
     <title>Ultimate Apocalypse on Linux</title>
-    <link>https://parilia.github.io/ua-linux</link>
+    <link>https://parilia.github.io/a/gaming/ua-linux</link>
     <description>This is how to install Ultimate Apocalypse on Linux.</description>
   </item>
     <item>
     <title>Linux Gaming</title>
-    <link>https://parilia.github.io/linux-gaming</link>
+    <link>https://parilia.github.io/a/gaming/linux-gaming</link>
     <description>This is my take on the state of linux gaming in 2023.</description>
   </item>
     <item>
     <title>What is a checksum and why its important</title>
-    <link>https://parilia.github.io/what-is-a-checksum</link>
+    <link>https://parilia.github.io/a/linux/what-is-a-checksum</link>
     <description>What a checksum is why you should care.</description>
   </item>
     <item>
     <title>How to permanently mount an external or internal drive in linux</title>
-    <link>https://parilia.github.io/perm-mount-drives</link>
+    <link>https://parilia.github.io/a/linux/perm-mount-drives</link>
     <description>How to mount a drive permanently using disks.</description>
   </item>
     <item>
     <title>Installing ME3 Tweaks on Linux</title>
-    <link>https://parilia.github.io/me3-linux</link>
+    <link>https://parilia.github.io/a/gaming/me3-linux</link>
     <description>Following this guide to install ME3 tweaks on your linux system.</description>
   </item>
 </channel>

@@ -149,6 +149,33 @@ nav-bar li a:hover {
   border-radius: 10px;
 }
 
+/* Footer*/
+foot-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  overflow: hidden;
+  background-color: #1f2226;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+}
+
+foot-bar li {
+  float: right;
+}
+
+foot-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+}
+
+
+
 /* Image gallery */
 div.gallery {
   border: 1px solid #ccc;

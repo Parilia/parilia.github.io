@@ -2,11 +2,11 @@
 <html>
 <head>
 <title>ME3 - Linux</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 <div class="banner">
-<img src="img/banner.png">
+<img src="/img/banner.png">
 <div class="bottom-right"><a class="github-button" href="https://github.com/Parilia" data-color-scheme="no-preference: light; light: dark; dark: dark;" data-size="large" aria-label="Follow @Parilia on GitHub">Follow @Parilia</a></div>
 </div>
 <nav-bar>
@@ -35,7 +35,7 @@
   You need to find your mass effect pfx file, depending on what partition you installed the game on, you will want to navigate to:
   <br><br><code>steamapps/compatdata/1328670/</code> <br><br>
   1328670 is the steam id for Mass Effect Legendary Edition. If installing another program for another game you will want the pfx file for that game.
-  <img src="img/pfx.png"/>
+  <img src="/img/pfx.png"/>
   <h3>Step Two</h3>
   Copy your pfx folder and move it to where you want to have me3 tweaks installed, I personally have everything for modding mass effect in one folder. We will be using this folder in the install proscess so its important you are using the new copied version not the original.<br>
   I placed mine in:
@@ -46,21 +46,21 @@
   <h3>Step Three</h3>
   Now we need to install me3 tweaks, you will want to place the .exe where you want to insatll it. I placed mine inside the program files inside the pfx file but you could just put it somehere like this:
   <br><br><code>/mnt/Data/MassEffectModding/drive_c/Program Files</code><br><br>
-  <img src="img/me3instloc.png"/>
+  <img src="/img/me3instloc.png"/>
   <h3>Step Four</h3>
   In this step we will be using lutris to install me3 tweaks.<br>
   T get started we need to open lutris using proton, this is done via the command line:
   <br><br><code>LUTRIS_ENABLE_PROTON=1 lutris</code><br><br>
   In lutris hit the + in the top left and then select "add a locally installed game". 
-  <img src="img/lutris1.png"/>
-  <img src="img/lutris2.png"/>
+  <img src="/img/lutris1.png"/>
+  <img src="/img/lutris2.png"/>
 <br>
 Next up we have the game config screen, you can name it whatever you want nd then you need to set the runner to wine,<br>
-<img src="img/lutris3.png"/>
+<img src="/img/lutris3.png"/>
 In game opions select your executable and set the prefix architecture to your new pfx folder.
-<img src="img/lutris4.png"/>
+<img src="/img/lutris4.png"/>
 Set your runner options to use proton and you can disable all but esync and fsync. It should also be noted that changing the proton version after this point is not recommended. 
-<img src="img/lutris5.png"/>
+<img src="/img/lutris5.png"/>
 Now you can hit save.<br>
 <h3>Step Five</h3>
 Start the "game" that you just created in lutris. this is going to run the installer. The first box that pops up will ask for the install location, i recomend using the file where your installer is sitting.<br>
@@ -68,12 +68,12 @@ When it is done it will open a windows explorer window, you can close this windo
 <h3>Step Six</h3>
 Almost done, next we must edit the install in lutris, to do this right click on me3 tweaks in lutris and select configure.<br>
 Navigate to game options and change the executable to your newly installed one and hit save.
-<img src="img/lutris6.png"/>
+<img src="/img/lutris6.png"/>
 <h3>Bonus Step</h3>
 So you probably dont want to open lutris in proton mode every time you want to open the mod manager. So right click on ME3 tweaks in lutris and select to create either a desktop and/or a application menu shortcut.<br>
 Then right click that shortcut and edit it, Add the following to the start of Environment Vairables.
 <br><br><code>LUTRIS_ENABLE_PROTON=1</code><br><br>
-<img src="img/lutris7.png"/>
+<img src="/img/lutris7.png"/>
 You are now all done installing the mod manager. My advice for next steps is to backup your game file from within ME3 tweaks, i think it prompts you too in the program, you will want to do this as mass effect mods directly edit your game and the only way the program can un install mods is via those back ups. Oh and also leave all texture mods till last.<br>Enjoy =D
 </p-1>
 <br>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modding Skyrim SE on Linux</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+</head>
+<div class="banner">
+<img src="/img/banner.png">
+<div class="bottom-right"><a class="github-button" href="https://github.com/Parilia" data-color-scheme="no-preference: light; light: dark; dark: dark;" data-size="large" aria-label="Follow @Parilia on GitHub">Follow @Parilia</a></div>
+</div>
+<nav-bar>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>
+    <li><a href="about">About</a></li>
+  </ul>
+  </nav-bar>
+<body>
+<br>
+<br>
+<br>
+<p-1>
+  <h1>Modding Skyrim SE on Linux</h1>
+  <br><br>
+  So to start off with I have been playing Skyrim for a good chunk of my like and my experience on windows was very easy, I'm obviously on linux now and getting Skyrim up and running kinda scared me as its a game I love and didn't want to mess up my experience of it.
+  <br>
+  Okay so that said I had read several things on the net that claimed it was easy like run your mod manager using wine or lutris and just change the name of the exe to get skse to work, that as I have came to understand both is way more complicated than it needs to be and changing names is a very bad idea as many mods make calls to the files by name and so they wont work if they cant find that file.
+  <br><br>
+  So here I will show how easy it can be assuming you own the game on steam, if you own it on GOG or elsewhere then I would recommend using lutris but you are on your own for finding out how it all works although lutris has a massive community that should help.
+  <br><br>
+<h3>Requirements</h3>
+<ul>
+  <li>Have your Steam version of Skyrim installed.</li>
+  <li>Have <a href="https://github.com/sonic2kk/steamtinkerlaunch">Steam Tinker Launch</a> installed, don't worry it tells you on the page how to do that.</li>
+  <li><a href="https://skse.silverlock.org/">SKSE</a> should be installed before starting the process. You will need to restart steam after installing this program</li>
+</ul>
+<h3>Step One</h3>
+  On steam right click Skyrim on the left and select properties, from there go to compatibility and select Steam Tinker Launch.
+  <br><br>
+      <img src="/img/skyrimsetstl.png"/>
+  <br><br>
+<h3>Step Two</h3>
+  Launch Skyrim and when the Steam Tinker Launch menu comes up select main menu. From here you can install either Vortex or Mod Organizer 2, I personally recommend using MO2 as it is a more well rounded program and has many great features that Vortex doesn't have or are just way harder to find, it also runs a lot better for our purposes. I will be assuming you chose MO2 for the rest of this guide.
+  <br><br>
+  So press Mod Organizer 2 to install it.
+<h3>Step Three</h3>
+  Once its installed you can run it and install your mods, You will have to manually download them and drag them in or import them (just don't drag id say more than six at a time and only one really big one at a time as it can cause the program to crash).
+  <br>
+  Once you have installed all the mods you want, select plugins on the right panel and select sort. This will use loot to sort them and the best part is its built in so no need to go through trying to install it.
+<br><br>
+  <img src="/img/mo2.png"/>
+<br><br>
+<h3>Step Four</h3>
+  In steam create a collection and name it:
+      <br><code>MO2</code><br>
+  Place Skyrim in the collection, this will tell Steam Tinker Launch to open MO2 when you open Skyrim.
+<h3>Step Five</h3>
+  Launch the game and wait, it should prompt you to open MO2 GUI. (You can set this to be the default action in the main menu under the default button)
+  <br>
+  From here launch skse and your game should load. If you have any dialogue boxes come up saying it cant start then check all your mods are correct for your version of the game. 
+<h3>Bonus Steps</h3>
+  In the main menu select default, from here you can tweak many aspects and this is also where you will want to put any custom launch options you would normally place in steam. You can also set MO2 to always open the gui and select the version of proton you wish to use.
+  <br><br>
+      <img src="/img/stldefault.png"/>
+  <br><br>
+  Happy Modding =D
+</p-1>
+<br>
+<br>
+<foot-bar>
+  <ul>
+    <li><a href="/rss.xml">RSS</a></li>
+  </ul>
+</foot-bar>
+</body>
+</html>

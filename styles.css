@@ -149,6 +149,61 @@ nav-bar li a:hover {
   border-radius: 10px;
 }
 
+  /*Drop Button*/
+  li a, .dropbtn {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111111;
+    border-radius: 10px;
+    z-index:1;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+    z-index:1;
+  }
+  
+  /*Drop Menu*/
+  .dropdown-menu {
+    display:none ;
+    position:absolute ;
+    background-color: #1d2021;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #272b30;
+    border-width: 2px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    margin-top: 1px;
+    left: 210px; 
+  }
+  
+  .dropdown-menu a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index:1;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #282828;
+    z-index:1;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
 /* Footer*/
 foot-bar ul {
   list-style-type: none;

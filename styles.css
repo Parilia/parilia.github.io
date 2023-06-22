@@ -94,6 +94,10 @@ h3
   font-size: 150%;
   line-height: 35px; 
 }
+.center
+{
+  text-align: center;
+}
 
 /*scrollbar*/
 /* width */

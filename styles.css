@@ -209,28 +209,25 @@ nav-bar li a:hover {
   }
 
 /* Footer*/
-foot-bar ul {
+.footer
+{
   list-style-type: none;
-  margin: 0;
-  padding: 2px;
+  display: block;
+  text-align: center;
+  padding: 6px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
   overflow: hidden;
   background-color: #1f2226;
   font-family: Verdana,sans-serif;
   font-size: 15px;
 }
-
-foot-bar li {
-  float: right;
-}
-
-foot-bar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Verdana,sans-serif;
-  font-size: 15px;
+.footercont
+{
+  margin-left: 5px;
+  margin-right:5px ;
 }
 
 

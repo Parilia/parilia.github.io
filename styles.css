@@ -218,7 +218,6 @@ nav-bar li a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  position: fixed;
   overflow: hidden;
   background-color: #1f2226;
   font-family: Verdana,sans-serif;

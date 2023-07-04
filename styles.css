@@ -73,7 +73,6 @@ p-1 a:visited {
 p-1 a:hover {
   color: #65bcc5;
 }
- 
 
 h1 {
 	font-family: monospace;
@@ -154,7 +153,7 @@ nav-bar li a:hover {
 }
 
   /*Drop Button*/
-  li a, .dropbtn {
+  drp-d li a, .dropbtn {
     display: inline-block;
     color: #ffffff;
     text-align: center;
@@ -162,19 +161,19 @@ nav-bar li a:hover {
     text-decoration: none;
   }
   
-  li a:hover, .dropdown:hover .dropbtn {
+  drp-d li a:hover, .dropdown:hover .dropbtn {
     background-color: #111111;
     border-radius: 10px;
     z-index:1;
   }
   
-  li.dropdown {
+  drp-d li.dropdown {
     display: inline-block;
     z-index:1;
   }
   
   /*Drop Menu*/
-  .dropdown-menu {
+  drp-d .dropdown-menu {
     display:none ;
     position:absolute ;
     background-color: #1d2021;
@@ -190,7 +189,7 @@ nav-bar li a:hover {
     left: 210px; 
   }
   
-  .dropdown-menu a {
+  drp-d .dropdown-menu a {
     color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
@@ -199,12 +198,12 @@ nav-bar li a:hover {
     z-index:1;
   }
   
-  .dropdown-menu a:hover {
+  drp-d .dropdown-menu a:hover {
     background-color: #282828;
     z-index:1;
   }
   
-  .dropdown:hover .dropdown-menu {
+  drp-d .dropdown:hover .dropdown-menu {
     display: block;
   }
 

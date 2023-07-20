@@ -4,9 +4,7 @@ height: 100%;
 .banner {
   width: 100%;
   height: auto;
-  position: relative;
-  text-align: center;
-  min-width: 100%;
+
 }
 .banner img {
   max-width: 100%;
@@ -35,7 +33,7 @@ p {
     font-size: 15px;
 }
 
-{
+img {
   display: block;
   width: 70%;
   margin-left: auto;

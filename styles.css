@@ -52,6 +52,9 @@ p-1 code
   margin-bottom: 5px;
   background-color: #33393d;
   border-radius: 8px;
+  display: block;
+  line-height: 30px;
+}
 }
 
 p-1 img

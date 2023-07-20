@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+</head>
+<div class="banner">
+  <img src="/img/banner.png">
+  <div class="bottom-right"><a class="github-button" href="https://github.com/Parilia"
+      data-color-scheme="no-preference: light; light: dark; dark: dark;" data-size="large"
+      aria-label="Follow @Parilia on GitHub">Follow @Parilia</a></div>
+</div>
+<nav-bar>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
+    <li><a href="/about">About</a></li>
+    <drp-d>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
+        <div class="dropdown-menu">
+          <a href="/a/linux">Linux</a>
+          <a href="/a/gaming">Gaming</a>
+          <!--<a href="/a/web">Web</a>-->
+        </div>
+    </drp-d>
+  </ul>
+</nav-bar>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <p-1>
+    <h2>Awesome Terminal Programs</h2>
+    <br><br>
+    Here are some of the awesome terminal programs and utilities I use.
+    <br><br>
+    <h3>Nerdfonts</h3>
+    Okay at the very top of this list is a must have if you plan on using the terminal, they are also cross platform so
+    once you have one you like you never have to give it up.<br>
+    A nerd font is a font with a bunch off added characters and icons that allow for displaying information in a more
+    efficient manner. A lot of terminal programs also require a nerd font in order to function correctly.<br>
+    Below is a test to make sure your font is set correctly.<br>
+    <br><br>
+    <code>
+      #!/usr/bin/env bash
+
+      font_tests="Normal
+      \033[1mBold\033[22m
+      \033[3mItalic\033[23m
+      \033[3;1mBold Italic\033[0m
+      \033[4mUnderline\033[24m
+      == === !== >= <==>
+        契     勒 鈴 "
+
+        printf "%b" "${font_tests}"
+    </code>
+    <br><br>
+    <img src="/img/fonttest.png">
+    <br><br>
+    <a href="https://www.nerdfonts.com/">https://www.nerdfonts.com</a>
+    <br>
+    <h3>Starship</h3>
+    Starship is a cross platform shell prompt. Its fast, looks good and is very customisable. Go check it out yourself.
+    <br><br>
+    <img src="/img/starship.png">
+    <br><br>
+    <a href="https://starship.rs/">https://starship.rs</a>
+    <br>
+    <h3>tldr</h3>
+    tldr is a terminal help page for humans, the --help and man commands are really hard to read. tldr gives you simple
+    and useful information in a easy to read format. You should be able to install it using the command you normally
+    use.
+    <br><br>
+    <img src="/img/tldr.png">
+    <br><br>
+    <a href="https://tldr.sh/">https://tldr.sh</a>
+    <br>
+    <h3>Bat</h3>
+    Keeping on the trend of making things more human friendly is bat, it is cat rewritten to be more user friendly. It
+    has syntax highlighting, line numbers and starts you at the top of the page.
+    <br><br>
+    <img src="/img/bat.png">
+    <br><br>
+    <a href="https://github.com/sharkdp/bat">https://github.com/sharkdp/bat</a>
+    <br>
+    <h3>htop</h3>
+    htop is an interactive system-monitor process-viewer and process-manager. It is designed as an alternative to the
+    Unix program top.
+    <br><br>
+    <img src="/img/htop.png">
+    <br><br>
+    <a href="https://github.com/htop-dev/htop">https://github.com/htop-dev/htop</a>
+    <br>
+    <h3>btop</h3>
+    btop is another alternative but this time with more information and more customisability.
+    <br><br>
+    <img src="/img/btop.png">
+    <br><br>
+    <a href="https://github.com/aristocratos/btop">https://github.com/aristocratos/btop</a>
+    <br>
+    <h3>ripgrep</h3>
+    ripgrep is a line-oriented search tool that recursively searches the current directory for a regex pattern. By
+    default, ripgrep will respect gitignore rules and automatically skip hidden files/directories and binary files.
+    <br><br>
+    <a href="https://github.com/BurntSushi/ripgrep">https://github.com/BurntSushi/ripgrep</a>
+    <br>
+    <h3>lazygit</h3>
+    lazygit is simple terminal UI for git commands, It is packed with features to make the experience way nicer and more
+    intuitive.
+    <br><br>
+    <img src="lazygit.gif">
+    <br><br>
+    <a href="https://github.com/jesseduffield/lazygit">https://github.com/jesseduffield/lazygit</a>
+    <br>
+    <h3>Neovim / Lazyvim</h3>
+    Neovim is a Vim-based text editor engineered for extensibility and usability. It is used completely in the terminal
+    with no need to touch your mouse. Once you get the hang of it you can fly through your work.
+    <br><br>
+    Lazyvim transforms your Neovim into a full-fledged IDE with sane out of the box settings and the easy ability to
+    customise it to your liking.
+    <br><br>
+    <img src="/img/lazyvim">
+    <br><br>
+    <a href="https://neovim.io/">https://neovim.io</a><br>
+    <a href="https://www.lazyvim.org/">https://www.lazyvim.org</a>
+    <br>
+    <h3>neofetch</h3>
+    Okay the first of our last two entries this a little simpler than the heavies above. neofetch is a simple program
+    which displays you system mainly for showing off purposes but can be handy when altering colours in your terminal.
+    <br><br>
+    <img src="/img/neofetch.png">
+    <br><br>
+    <a href="https://github.com/dylanaraps/neofetch">https://github.com/dylanaraps/neofetch</a>
+    <br>
+    <h3>cmatrix</h3>
+    CMatrix is based on the screensaver from The Matrix website. It shows text flying in and out in a terminal like as
+    seen in "The Matrix" movie. It can scroll lines all at the same rate or asynchronously and at a user-defined speed.
+    <br><br>
+    <img src="cmatrix.gif">
+    <br><br>
+    <a href="https://github.com/abishekvashok/cmatrix">https://github.com/abishekvashok/cmatrix</a>
+    <br>
+  </p-1>
+  <br>
+  <br>
+  <div class="footer">
+    <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>
+    <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/social/discord-singular_vector.svg"></a>
+    <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/github_vector.svg"></a>
+    <a href="/rss.xml" class="footercont"><img alt="RSS" height="40" src="https://parilia.github.io/img/rss.svg"></a>
+  </div>
+</body>
+
+</html>

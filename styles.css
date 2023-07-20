@@ -11,6 +11,10 @@ height: 100%;
 .banner img {
   max-width: 100%;
   height: auto;
+  position: relative;
+  text-align: center;
+  min-width: 100%;
+}
 }
 .bottom-right {
   position: absolute;
@@ -30,14 +34,14 @@ p {
 	font-family: Verdana,sans-serif;
     font-size: 15px;
 }
-/*img
+
 {
   display: block;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
-*/
+
 /*Articles*/
 p-1 {
   display: block;
@@ -98,6 +102,7 @@ h2
     font-size: 300%;
     margin: auto;
     width: 100%;
+    text-align: center;
 }
 h3
 {

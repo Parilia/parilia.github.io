@@ -44,7 +44,7 @@
     efficient manner. A lot of terminal programs also require a nerd font in order to function correctly.<br>
     Below is a test to make sure your font is set correctly.<br>
     <br><br>
-    <code>
+    <pre><code>
       #!/usr/bin/env bash
 
       font_tests="Normal
@@ -53,10 +53,10 @@
       \033[3;1mBold Italic\033[0m
       \033[4mUnderline\033[24m
       == === !== >= <==>
-        契     勒 鈴 "
+      契     勒 鈴 "
 
-        printf "%b" "${font_tests}"
-    </code>
+      printf "%b" "${font_tests}"
+    </code></pre>
     <br><br>
     <img src="/img/fonttest.png">
     <br><br>

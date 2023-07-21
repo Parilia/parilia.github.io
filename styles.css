@@ -13,7 +13,7 @@ height: 100%;
   text-align: center;
   min-width: 100%;
 }
-}
+
 .bottom-right {
   position: absolute;
   bottom: 8px;
@@ -33,13 +33,14 @@ p {
     font-size: 15px;
 }
 
-img {
+/*
+  img {
   display: block;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
-
+*/
 /*Articles*/
 p-1 {
   display: block;
@@ -66,7 +67,7 @@ p-1 code
   display: block;
   line-height: 30px;
 }
-}
+
 
 p-1 img
 {
@@ -243,7 +244,19 @@ nav-bar li a:hover {
   margin-right:5px ;
 }
 
+.footercont img
+{
+  margin-left: 5px;
+  margin-right:5px ;
+}
 
+.container img
+{
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Image gallery */
 div.gallery {

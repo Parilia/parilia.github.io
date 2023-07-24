@@ -30,13 +30,15 @@
 <br>
   <div class="container">
   <h1>Modding Skyrim SE on Linux</h1>
-  <br><br>
+  <p>
   So to start off with I have been playing Skyrim for a good chunk of my life and my experience on windows was very easy. I'm obviously on linux now and getting Skyrim up and running kinda scared me as it's a game I love and didn't want to mess up my experience of it.
-  <br>
+  </p>
+  <p>
   Okay so that said I had read several things on the net that claimed it was easy like run your mod manager using wine or lutris and just change the name of the exe to get skse to work, that as I have came to understand both is way more complicated than it needs to be and changing names is a very bad idea as many mods make calls to the files by name and so they wont work if they cant find that file.
-  <br><br>
+   </p>
+   <p>
   So here I will show how easy it can be assuming you own the game on steam, if you own it on GOG or elsewhere then I would recommend using lutris but you are on your own for finding out how it all works although lutris has a massive community that should help.
-  <br><br>
+  </p>
 <h3>Requirements</h3>
 <ul>
   <li>Have your Steam version of Skyrim installed.</li>
@@ -44,40 +46,57 @@
   <li><a href="https://skse.silverlock.org/">SKSE</a> should be installed before starting the process. You will need to restart steam after installing this program</li>
 </ul>
   <h3>SKSE Installation</h3>
+  <p>
 When installing skse you will want to make a new zip file containing its data folder and once you have MO2 installed you will want to install the zip as a mod. This is because for some reason MO2 is not reading those files when installed normally and therefore other mods cannot see them and will not work correctly. By installing the data folder as a mod it is put in with the other mods as it would normally be and therfore they will be able to read the scrips.
+</p>
 <h3>Step One</h3>
+<p>
   On steam right click Skyrim on the left and select properties, from there go to compatibility and select Steam Tinker Launch.
-  <br><br>
+  </p>
       <img src="/img/skyrimsetstl.png"/>
-  <br><br>
+  
 <h3>Step Two</h3>
+<p>
   Launch Skyrim and when the Steam Tinker Launch menu comes up select main menu. From here you can install either Vortex or Mod Organizer 2, I personally recommend using MO2 as it is a more well rounded program and has many great features that Vortex doesn't have or are just way harder to find, it also runs a lot better for our purposes. I will be assuming you chose MO2 for the rest of this guide.
   <br><br>
   So press Mod Organizer 2 to install it.
+  </p>
 <h3>Step Three</h3>
+<p>
   Once it's installed you can run it and install your mods, You will have to manually download them and drag them in or import them (just don't drag I'd say more than six at a time and only one really big one at a time as it can cause the program to crash).
-  <br>
+  </p>
+  <p>
   Once you have installed all the mods you want, select plugins on the right panel and select sort. This will use loot to sort them and the best part is it's built in so no need to go through trying to install it.
-<br><br>
+</p>
   <img src="/img/mo2.png"/>
-<br><br>
+
 <h3>Step Four</h3>
+<p>
   In steam create a collection and name it:
-      <br><br><code>MO2</code><br><br>
+  </p>
+  <code>MO2</code>
+  <p>
   Place Skyrim in the collection, this will tell Steam Tinker Launch to open MO2 when you open Skyrim.
-<h3>Step Five</h3>
+</p>
+  <h3>Step Five</h3>
+  <p>
   Launch the game and wait, it should prompt you to open MO2 GUI. (You can set this to be the default action in the main menu under the default button)
-  <br>
+  </p>
+  <p>
   From here launch skse and your game should load. If you have any dialogue boxes come up saying it cant start then check all your mods are correct for your version of the game. 
-<h3>Bonus Steps</h3>
+</p>
+  <h3>Bonus Steps</h3>
+  <p>
   In the main menu select default, from here you can tweak many aspects and this is also where you will want to put any custom launch options you would normally place in steam. You can also set MO2 to always open the gui and select the version of proton you wish to use.
-  <br><br>
+  </p>
       <img src="/img/stldefault.png"/>
-  <br><br>
+  
   <h3>Audio Issues</h3>
+  <p>
   Just want to add this on the end here as I did have audio lag myself, how I solved it is from the steam tinker launch menu select wine tricks > select category as DLL's and the wine tricks proton > hit select > scroll and find xact and xact_x64 and tick them > hit select > hit install and wait, there should be a notification when they are installed. Then you can hit done.
   <br><br>
   Happy Modding =D
+  </p>
 </div></div>
 <br>
 <br>

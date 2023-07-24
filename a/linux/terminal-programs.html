@@ -49,17 +49,17 @@
       Below is a test to make sure your font is set correctly.
       </p>
       <pre><code>
-          #!/usr/bin/env bash
+      #!/usr/bin/env bash
 
-          font_tests="Normal
-          \033[1mBold\033[22m
-          \033[3mItalic\033[23m
-          \033[3;1mBold Italic\033[0m
-          \033[4mUnderline\033[24m
-          == === !== >= <==>
-            契     勒 鈴 "
+      font_tests="Normal
+      \033[1mBold\033[22m
+      \033[3mItalic\033[23m
+      \033[3;1mBold Italic\033[0m
+      \033[4mUnderline\033[24m
+      == === !== >= <==>
+      契     勒 鈴 "
 
-            printf "%b" "${font_tests}"
+      printf "%b" "${font_tests}"
         </code></pre>
         <p>
       <img src="/img/fonttest.png">

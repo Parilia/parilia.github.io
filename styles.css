@@ -17,15 +17,16 @@ p {
 }
 
 h1 {
-	font-family: monospace;
-  font-size: 300%;
-  line-height: 35px;
-  text-align: center;
+    font-family: monospace;
+    font-size: 300%;
+    width: 100%;
+    text-align: center;
+    line-height: 55px;
+    margin-bottom: 100px;
 }
 h2 {
     font-family: monospace;
     font-size: 300%;
-    margin: auto;
     width: 100%;
     text-align: center;
     line-height: 55px;
@@ -38,8 +39,8 @@ h3 {
   margin-top: 84px;
 }
 h4 {
-	font-family: monospace;
-  font-size: 150%;
+  font-family: monospace;
+  font-size: 250%;
   line-height: 35px;
   text-align: center;
 }

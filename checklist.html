@@ -1,69 +1,82 @@
 <!DOCTYPE html>
+
 <head>
-    <style>
-        h2  
-        {
-            font-family: monospace;
-            font-size: 300%;
-        }
-        h3  
-        {
-            font-family: monospace;
-            font-size: 300%;
-        }
-        p   
-        {
-            font-family: monospace;
-            font-size: 300%;
-        }
-        code
-        {
-            font-family: monospace;
-            font-size: 140%;
-            background-color: #0D1117;
-        }
-        body 
-        {
-	        color: #FFFFFF;
-	        background-color: #1B1E21;
-        }
-    </style>
-    <title>Checklist</title>  
+  <style>
+    h2 {
+      font-family: monospace;
+      font-size: 300%;
+    }
+
+    h3 {
+      font-family: monospace;
+      font-size: 300%;
+    }
+
+    p {
+      font-family: monospace;
+      font-size: 300%;
+    }
+
+    code {
+      font-family: monospace;
+      font-size: 140%;
+      background-color: #0D1117;
+    }
+
+    body {
+      color: #FFFFFF;
+      background-color: #1B1E21;
+    }
+  </style>
+  <title>Checklist</title>
 </head>
 <h2>Checklist</h2>
 <p>
-    <ul>
-        <li>Download <a href="https://www.balena.io/etcher">Balena Etcher</a></li>
-        <li>Download the ISO you want from <a href="https://nobaraproject.org/download-nobara/">Here</a></li>
-        <li>Do a checksum, if you dont know then look below.</li>
-        <li><b>Backup any files you want to keep,</b> it will only install to your choosen drive so your harddrive would keep all its data but long term you will want to format it as linux reading that file system will run into issues. </li>
-        <li>Backup your passwords, my advice is take this oppertunity to swap to <a href="https://bitwarden.com/">Bitwarden</a> as its free and opensource and runs nicely on linux and android.</li>
-        <li>Backup your saves, these can be hard to find, some will be in your documents others will be in appdata folders, remember to check .local, .roaming and locallow. If in doubt search the net for the location.</li>
-        <li>Back up all your minecraft stuff, server addresses and any map mod data</li>
-        <li>You will need to disable secure boot via your bios, you can do this when in there to tell it to boot your usb drive first. (you will need to chage your boot order back to its default once the OS is installed).</li>
-        
-    </ul>
-    <h3>
-        Checksum
-    </h3>
-    The CertUtil is a pre-installed Windows utility, that can be used to generate hash checksums:
-    </br><code>CertUtil -hashfile pathToFileToCheck SHA256</code></p></br>
-    So your should look something like this:
-    </br><code>CertUtil -hashfile C:\Users\kayla\Desktop\Nobara-37-KDE-2023-04-02.iso SHA256</code></br>
-    <h3>Wayland or X11/Plasma</h3>
-    Simple answer is if you have an Nvidia graphics card then as it stands you should use X11 as Wayland is not fully supported with nvidia.</br>
-    I personally have my startup skip logging in and to do this you can access system settings>startup and shutdown>login screen(SDDM)>behavior.</br>
-    Changing this to auto loggin as your user and with session plasma(x11) will auto log you in usisng that.</br>
-    Otherwise make sure x11/plasma is selected on the login screen. You will want to be and have x11 before continuing with your configerations</br>
-    <h3>Setting your NVIDIA Graphics card to default</h3>
-    Follow the guide <a href="https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/#_step_8_edit_the_x11_configuration">here</a></br>
-    If you find that /usr/share/X11/xorg.conf.d/nvidia.conf doesnt exist then use this file /etc/X11/xorg.conf.d/10-nvidia.conf and do not rename it. you will need to copy and paste it to /usr/share/X11/xorg.conf.d/   to do so you will need to open the file as an adminastrator(Right click in the file and open as admin)
-    </br>
-    <h3>Mounting your drive permanently</h3>
-    You may wish to format your drive before doing this, that is done using the KDE Partition Manager. There are two ways to permanently mount your drive, we will go over the easy way using a program called "Disks", you can find this in discover.</br>
-    <img src="img/disksdiscover.png" width="50%"></br>
-    Open Disks and select edit mount options as seen below.</br>
-    <img src="img/disks.png"></br>
-    Set your mount options should look similar to the image below.(Obvs you can call it what you want).</br>
-    <img src="img/mountoptions.png">
+<ul>
+  <li>Download <a href="https://www.balena.io/etcher">Balena Etcher</a></li>
+  <li>Download the ISO you want from <a href="https://nobaraproject.org/download-nobara/">Here</a></li>
+  <li>Do a checksum, if you don't know then look below.</li>
+  <li><b>Backup any files you want to keep,</b> it will only install to your chosen drive so your hard drive would keep
+    all its data but long term you will want to format it as linux reading that file system will run into issues. </li>
+  <li>Backup your passwords, my advice is take this opportunity to swap to <a
+      href="https://bitwarden.com/">Bitwarden</a> as its free and opensource and runs nicely on linux and android.</li>
+  <li>Backup your saves, these can be hard to find, some will be in your documents others will be in appdata folders,
+    remember to check .local, .roaming and locallow. If in doubt search the net for the location.</li>
+  <li>Back up all your minecraft stuff, server addresses and any map mod data</li>
+  <li>You will need to disable secure boot via your bios, you can do this when in there to tell it to boot your usb
+    drive first. (you will need to chage your boot order back to its default once the OS is installed).</li>
+
+</ul>
+<h3>
+  Checksum
+</h3>
+The CertUtil is a pre-installed Windows utility, that can be used to generate hash checksums:
+</br><code>CertUtil -hashfile pathToFileToCheck SHA256</code></p></br>
+So your should look something like this:
+</br><code>CertUtil -hashfile C:\Users\kayla\Desktop\Nobara-37-KDE-2023-04-02.iso SHA256</code></br>
+<h3>Wayland or X11/Plasma</h3>
+Simple answer is if you have an Nvidia graphics card then as it stands you should use X11 as Wayland is not fully
+supported with nvidia.</br>
+I personally have my startup skip logging in and to do this you can access system settings>startup and shutdown>login
+screen(SDDM)>behavior.</br>
+Changing this to auto loggin as your user and with session plasma(x11) will auto log you in usisng that.</br>
+Otherwise make sure x11/plasma is selected on the login screen. You will want to be and have x11 before continuing with
+your configerations</br>
+<h3>Setting your NVIDIA Graphics card to default</h3>
+Follow the guide <a
+  href="https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/#_step_8_edit_the_x11_configuration">here</a></br>
+If you find that /usr/share/X11/xorg.conf.d/nvidia.conf doesnt exist then use this file
+/etc/X11/xorg.conf.d/10-nvidia.conf and do not rename it. you will need to copy and paste it to
+/usr/share/X11/xorg.conf.d/ to do so you will need to open the file as an adminastrator(Right click in the file and open
+as admin)
+</br>
+<h3>Mounting your drive permanently</h3>
+You may wish to format your drive before doing this, that is done using the KDE Partition Manager. There are two ways to
+permanently mount your drive, we will go over the easy way using a program called "Disks", you can find this in
+discover.</br>
+<img src="img/disksdiscover.png" width="50%"></br>
+Open Disks and select edit mount options as seen below.</br>
+<img src="img/disks.png"></br>
+Set your mount options should look similar to the image below.(Obvs you can call it what you want).</br>
+<img src="img/mountoptions.png">
 </p>

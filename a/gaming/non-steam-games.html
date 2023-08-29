@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Installing a Non-Steam Game</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+</head>
+<div class="banner">
+  <img src="/img/banner.png">
+</div>
+<div class="navbar">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
+    <li><a href="/about">About</a></li>
+    <drp-d>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
+        <div class="dropdown-menu">
+          <a href="/a/linux">Linux</a>
+          <a href="/a/gaming">Gaming</a>
+          <!--<a href="/a/web">Web</a>-->
+        </div>
+    </drp-d>
+  </ul>
+</div>
+
+<body>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <h2>Installing Non-Steam Games</h2>
+    <p>
+      If you want to install games on Linux using proton there are a number of ways you can do this such as Bottles,
+      Lutris and Steam. In this guide we will be looking at Steam and how you can install games through it as
+      non-steam games.
+    </p>
+    <h3>Proton</h3>
+    <p>
+      Proton is a compatibility layer which allows windows games to run on non windows systems, it comes with steam. I
+      personally prefer using a custom version of it called GE proton as it packs more features and generally runs games
+      better (link below).<br>
+      <a href="https://github.com/GloriousEggroll/proton-ge-custom">
+        https://github.com/GloriousEggroll/proton-ge-custom</a>
+    </p>
+    <h3>Installing games</h3>
+    <p>
+      This is rather simple, open steam and at the very top click games and add non-steam game to my library then select
+      the installer for your game. The next step only requires you to have a version of proton installed and knowing
+      where you wish to install your game. If you want to install it to the default location
+      (.local/share/Steam/steamapps/) then you do not need to do this next step.
+    </p>
+    <p>
+      If you want to install your game to the non default location, for instance a separate partition then you will need
+      to tell steam where to place its compatdata folder. Compatdata is where your wine prefix is stored and where it
+      will install your non-steam game. This is added by right clicking the game in your steam library and selecting
+      properties, add the below to your launch options.<br>
+      Steam Argument:<br>
+      <code>STEAM_COMPAT_DATA_PATH=place/path/here %command%</code>
+      You should now be fine to run the installer, once the installer has finished installing the game or launcher then
+      close it and move to the next step.
+    </p>
+    <h3>Running games</h3>
+    <p>
+      Once you have ran the installer you will need to right click the game in steam and select properties, from here
+      you will need to change the target to the games .exe, below is where I have installed ESO as an example.
+    </p>
+    <p>
+      Target (This needs to be inside quotation marks as shown to work)
+      <code>"/mnt/Data/ESO/pfx/drive_c/Program Files (x86)/Zenimax Online/Launcher/Bethesda.net_Launcher.exe"</code>
+      Start in
+      <code>/mnt/Data/ESO/pfx/drive_c/Program Files (x86)/Zenimax Online/Launcher</code>
+      <br>
+      You should now be able to run your game.
+    </p>
+
+  </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>
+    <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/social/discord-singular_vector.svg"></a>
+    <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/github_vector.svg"></a>
+    <a href="/rss.xml" class="footercont"><img alt="RSS" height="40" src="https://parilia.github.io/img/rss.svg"></a>
+  </div>
+</body>
+
+</html>

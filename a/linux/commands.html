@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Must know Linux Commands</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+  <style>
+    .container img {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+</head>
+<div class="banner">
+  <img src="/img/banner.png">
+</div>
+<div class="navbar">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
+    <li><a href="/about">About</a></li>
+    <drp-d>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
+        <div class="dropdown-menu">
+          <a href="/a/linux">Linux</a>
+          <a href="/a/gaming">Gaming</a>
+          <!--<a href="/a/web">Web</a>-->
+        </div>
+    </drp-d>
+  </ul>
+</div>
+
+<body>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <h2>Terminal Commands</h2>
+    <p>
+      On modern Linux systems knowing terminal commands isn't as necessary as it once was, however I think it is still
+      a faster and sometimes easier way of interacting with your system. We will start with the must knows and move down
+      the list to the more complicated but still useful to know.<br><br>
+      It should be noted that you should be able to use the "man" command followed by any of these commands to view
+      their manuals for more information.
+    </p>
+    <h4>Must Know Commands</h4>
+    <h3>cd</h3>
+    <p>
+      "cd" Changes the current working directory.
+    </p>
+    <img src="/img/commands/cd.png">
+
+
+    <h3>ls</h3>
+    <p>
+      "ls" Lists the current directory, there are ways to modify this command to show more information. My favourite way
+      of using this command is actually an alias of "ls -l" called "ll" this will list the directory in an actual list
+      showing you more detailed information than the "ls" command does. For both you can add the "-a" argument to list
+      hidden files.
+    </p>
+    <img src="/img/commands/ls.png">
+
+
+    <h3>tree</h3>
+    <p>
+      "tree" Displays a tree like list of the current directory, When using this you can specify the directory or just
+      navigate to the directory and use it from there, also adding "-C" will colourise the results and the "-a" argument
+      will show hidden files.
+    </p>
+    <img src="/img/commands/tree.png">
+
+
+
+    <h3>mkdir</h3>
+    <p>
+      "mkdir" Makes a new directory, this can be as simple as making a new folder or if you give it a completely new
+      path and us the "-p" (parent) argument it will make it.
+    </p>
+    <img src="/img/commands/mkdir.png">
+
+
+    <h3>rmdir</h3>
+    <p>
+      "rmdir" Deletes an empty directory. The "-p" argument must be used to remove a path.
+    </p>
+    <img src="/img/commands/rmdir.png">
+
+    <h3>touch</h3>
+    <p>
+      The "touch" command creates files, by default they are empty documents however you can specify a file type and can
+      create multiple in the same command.
+    </p>
+    <img src="/img/commands/touch.png">
+
+    <h3>rm</h3>
+    <p>
+      "rm" Deletes a file, as with touch upi can list multiple in one command. This is a dangerous command as files
+      removed via this command are permanently gone and there is no confirmation to hit to say you are sure you want to
+      remove the file. Be careful with this command.
+    </p>
+    <img src="/img/commands/rm.png">
+
+    <h3>cp</h3>
+    <p>
+      "cp" Copies files and directories, to another location. You can also rename the file while copying it.
+    </p>
+    <img src="/img/commands/cp.png"><br>
+    <img src="/img/commands/cpdir.png">
+
+    <h3>mv</h3>
+    <p>
+      "mv" Moves or renames files and directories.
+    </p>
+    <img src="/img/commands/mv.png">
+
+    <h3>pwd</h3>
+    <p>
+      "pwd" Prints the current working directory.
+    </p>
+    <img src="/img/commands/pwd.png">
+
+    <h3>fd</h3>
+    <p>
+      "fd" Finds files and directories.
+    </p>
+    <img src="/img/commands/fd.png">
+
+    <h3>clear</h3>
+    <p>
+      "clear" Will clear the terminal so that is will appear clean and new.
+    </p>
+
+    <h4>Useful Commands</h4>
+
+    <h3>wc</h3>
+    <p>
+      "wc" Counts the number of words, lines, characters and bytes in a file.
+    </p>
+    <img src="/img/commands/wc.png">
+
+    <h3>ln</h3>
+    <p>
+      "ln" Creates symbolic links with the "-s" argument (shortcuts) and hard links (a copy/mirror of the original
+      file).
+    </p>
+    <code>ln -s /path/to/file_or_directory path/to/symlink</code>
+
+
+    <h3>cat</h3>
+    <p>
+      "cat" Displays the contents of a given file in the terminal in a read only view.
+    </p>
+
+
+    <h3>bg & fg</h3>
+    <p>
+      "bg" Will put any suspended process in the background, "fg" will bring the background process to the foreground.
+    </p>
+
+    <h3>df</h3>
+    <p>
+      "df" Gives an overview of the file system disk space usage, using the "-h" argument will make it human readable.
+      The command bellow will make it only display only the useful parts.
+    </p>
+    <code>df -h -x squashfs -x tmpfs</code><br>
+    <img src="/img/commands/df.png"><br>
+    <img src="/img/commands/dfbetter.png">
+
+    <h3>wget</h3>
+    <p>
+      "wget" Allows you to download files from the internet. Specifically from HTTP, HTTPS and FTP servers.
+    </p>
+    <code>wget http://somesite.com/somefile.php</code>
+
+    <h3>curl</h3>
+    <p>
+      "curl" Also allows you to download files from the internet but is so much more than I will discuss here as it is a
+      very powerful tool, you will most probably use it when downloading applications. It supports a wide plethora of
+      server protocols.
+    </p>
+    <h3>In Conclusion</h3>
+    <p>
+      There are many more useful commands out there and you will learn them over time as and when you need them, the
+      important thing is to not try and learn everything at once as that will be overwhelming and you are less likely to
+      remember them all that way.
+    </p>
+
+  </div>
+  <div class="footer">
+    <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>
+    <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/social/discord-singular_vector.svg"></a>
+    <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/github_vector.svg"></a>
+    <a href="/rss.xml" class="footercont"><img alt="RSS" height="40" src="https://parilia.github.io/img/rss.svg"></a>
+  </div>
+</body>
+
+</html>

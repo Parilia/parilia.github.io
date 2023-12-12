@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modern Command Alternatives</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+  </head>
+  <div class="banner">
+    <img src="/img/banner.png">
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
+      <li><a href="/about">About</a></li>
+      <drp-d>
+        <li class="dropdown">
+          <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
+          <div class="dropdown-menu">
+            <a href="/a/linux">Linux</a>
+            <a href="/a/gaming">Gaming</a>
+            <a href="/a/privacy">Privacy</a>
+            <a href="/a/web">Web</a>
+          </div>
+        </drp-d>
+      </ul>
+    </div>
+    <body>
+      <br>
+      <br>
+      <br>
+      <div class="artlinuxwrapper">
+        <div class="container">
+          <h2>Modern Command Alternatives</h2>
+          <p>
+            There are plenty of useful and must know commands as pointed out in the previous article; <a href="commands.html">Must know Linux commands</a>.<br>
+            Here I will give you some modern alternatives to those commands.
+          </p>
+          <h3>ls & tree</h3>
+          <p>
+            My current recommendation is called lsd (lsdelux) and I use it in conjunction with vivid to change the colour scheme of ls. lsd provides a much nicer interface and gives you a fully customisable ls command. Bellow I have listed my recommended aliases for lsd.
+          </p>
+          <p>
+            <pre>
+		  <code>
+## LSD ## https://github.com/lsd-rs/lsd
+alias ls="lsd -a"
+alias ll="lsd -lah"
+alias tree="lsd --tree"
+		  </code>
+		  </pre>
+          </p>
+          <p>
+            <img src="/img/commands/lsd.png">
+          </p>
+          <p>
+            <a href="https://github.com/lsd-rs/lsd">https://github.com/lsd-rs/lsd</a><br>
+            <a href="https://github.com/sharkdp/vivid">https://github.com/sharkdp/vivid</a>
+          </p>
+          <h3>cd</h3>
+          <p>
+            zoxide is a smarter cd command written in the much loved rust language, it is inspired by z and autojump. It works by building up a library of where you have been using your cd command, once you have been there you can jump to that directory from anywhere and you don't even have to remember exactly where it is or what its called. 
+            <br>
+            <img src="/img/commands/zoxide.png">
+            <pre>
+		  <code>
+z foo              # cd into highest ranked directory matching foo
+z foo bar          # cd into highest ranked directory matching foo and bar
+z foo /            # cd into a subdirectory starting with foo
+
+z ~/foo            # z also works like a regular cd command
+z foo/             # cd into relative path
+z ..               # cd one level up
+z -                # cd into previous directory
+
+zi foo             # cd with interactive selection (using fzf)
+
+z foo<SPACE><TAB>  # show interactive completions (zoxide v0.8.0+, bash 4.4+/fish/zsh only)
+		  </code>
+		  </pre>
+            <br>
+            <a href="https://github.com/ajeetdsouza/zoxide">https://github.com/ajeetdsouza/zoxide</a>
+          </p>
+          <h3>mkdir</h3>
+          <p>
+            This next one is not a new program but rather a function that you must place in your rc file (.bashrc, .zshrc, etc.) It is called "mkcd". mkcd will create a new directory and jump into it immediately, this is much faster than the alternative of "mkdir foo" then "cd foo". 
+          </p>
+          <p>
+            <pre>
+		  <code>
+# mkcd
+function mkcd {
+  if [ ! -n "$1" ]; then
+    echo "Enter a directory name"
+  elif [ -d $1 ]; then
+    echo "\`$1' already exists"
+  else
+    mkdir $1 && cd $1
+  fi
+}
+		  </code>
+		  </pre>
+          </p>
+          <h3>find</h3>
+          <p>
+            fd is one of the best alternatives to the find command, it is so good that I had actually forgot it isn't the default. It is very fast, simple, powerful and written in rust. 
+          </p>
+          <p>
+            <img src="/img/commands/fd2.png"><br>
+            <a href="https://github.com/sharkdp/fd">https://github.com/sharkdp/fd</a>
+          </p>
+          <h3>cat</h3>
+          <p>
+            bat is a great alternative to cat, it supports syntax highlighting and will always start you at the top of a file. bat has integrations with git, fzf, ripgrep, fd and many more. 
+          </p>
+          <p>
+            <img src="/img/commands/bat.png"><br>
+            <a href="https://github.com/sharkdp/bat">https://github.com/sharkdp/bat</a>
+          </p>
+          <h3>grep</h3>
+          <p>
+            ripgrep is a line-oriented search tool that recursively searches the current directory for a regex pattern. Put more simply it will search files for a given search term and then tell you what file and what line number it is on. It is miles faster and much more user friendly than grep, not to mention written in rust.
+          </p>
+          <p>
+            <img src="/img/commands/rg.png"><br>
+            <a href="https://github.com/BurntSushi/ripgrep">https://github.com/BurntSushi/ripgrep</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
+				src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>
+      <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular"
+				height="40"
+				src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/social/discord-singular_vector.svg"></a>
+      <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
+				src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/github_vector.svg"></a>
+      <a href="/rss.xml" class="footercont"><img alt="RSS" height="40"
+				src="https://parilia.github.io/img/rss.svg"></a>
+    </div>
+  </body>
+</html>

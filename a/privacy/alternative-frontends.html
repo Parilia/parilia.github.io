@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Alternative Frontends</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
-</head>
-<div class="banner">
-  <img src="/img/banner.png">
-</div>
-<div class="navbar">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
-    <li><a href="/about">About</a></li>
-    <drp-d>
-      <li class="dropdown">
-        <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
-        <div class="dropdown-menu">
-          <a href="/a/linux">Linux</a>
-          <a href="/a/gaming">Gaming</a>
-          <a href="/a/privacy">Privacy</a>
-          <a href="/a/web">Web</a>
+  <head>
+    <title>Alternative Frontends</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+  </head>
+  <div class="banner">
+    <img src="/img/banner.png">
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
+      <li><a href="/about">About</a></li>
+      <drp-d>
+        <li class="dropdown">
+          <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
+          <div class="dropdown-menu">
+            <a href="/a/linux">Linux</a>
+            <a href="/a/gaming">Gaming</a>
+            <a href="/a/privacy">Privacy</a>
+            <a href="/a/web">Web</a>
+          </div>
+        </drp-d>
+      </ul>
+    </div>
+    <body>
+      <br>
+      <br>
+      <br>
+      <div class="artprivwrapper">
+        <div class="container">
+          <h2>Alternative Front-ends</h2>
+          <p>A front-end is how you consume content, it is the user facing part of a website. For instance youtube.com is the official front-end for youtube. For a lot of popular websites there are alternative front-ends made by third parties, usually these provide a better user experience and don't tend to have ads or privacy invasive tracking. You should look at your browsers extensions as there may be one that allow auto redirects which take you to these front-ends.</p>
+          <h4>Youtube</h4>
+          <h3>Invidious</h3>
+          <p>Invidious is a privacy focused open source alternative front-end for youtube. It is decentralised so you will need to find a server to join if you want to have your subscriptions, you can also watch without logging in.</p>
+          <p><a href="https://docs.invidious.io/instances/">https://docs.invidious.io/instances</a><br>
+            <a href="https://invidious.io/">https://invidious.io</a></p>
+          <h3>Freetube</h3>
+          <p>Freetube unlike invidious is a program separate from your browser, I prefer this as it doesn't require you to log in. You can choose to use the youtube api or the invidious api. Freetube allows you to make multiple profiles which can have their own subscriptions and are all stored locally, another great feature is it remembers where you are in a playlist (something youtube still doesn't do).</p>
+          <p><a href="https://freetubeapp.io/">https://freetubeapp.io</a><br>
+            <a href="https://github.com/FreeTubeApp/FreeTube">https://github.com/FreeTubeApp/FreeTube</a></p>
+          <h3>Libretube (Android)</h3>
+          <p>With LibreTube, you can freely watch and listen to content without the fear of prying eyes watching everything you are doing. Apart from that the Piped proxies can bypass geo restrictions, therefore LibreTube can be used in countries where YouTube is blocked.</p>
+          <p><a href="https://libretube.dev">https://libretube.dev</a><br>
+            <a href="https://github.com/libre-tube/LibreTube">https://github.com/libre-tube/LibreTube</a></p>
+          <h3>Yattee (iOS)</h3>
+          <p>Yattee is a privacy oriented video player for iOS, tvOS and macOS.</p>
+          <p><a href="https://github.com/yattee/yattee">https://github.com/yattee/yattee</a></p>
+          <h4>Medium</h4>
+          <h3>Scribe</h3>
+          <p>Scribe makes medium a less bad experience when people are forced to engage with it.</p>
+          <p><a href="https://sr.ht/~edwardloveall/Scribe/">https://sr.ht/~edwardloveall/Scribe</a><a href="https://scribe.rip">https://scribe.rip</a></p>
+          <h3>LibMedium</h3>
+          <p>LibMedium is a decentralised privacy focused alternative front-end for medium.</p>
+          <p><a href="https://github.com/realaravinth/libmedium">https://github.com/realaravinth/libmedium</a></p>
+          <h4>Google</h4>
+          <p>I will start this by saying you really should be using another search engine such as <a href="https://duckduckgo.com/">Duckduckgo</a> but sometimes you are forced onto google and for those times you should use...</p>
+          <h3>LibreX</h3>
+          <p>LibreX gives you results from Google, Qwant, Ahmia and popular torrent sites without spying on you and doesn't save any type of data about the user, there are no logs, no caches.</p>
+          <p><a href="https://github.com/hnhx/librex">https://github.com/hnhx/librex</a></p>
+          <h4>Google Translate</h4>
+          <h3>Lingva Translate</h3>
+          <p>An alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available.</p>
+          <p><a href="https://github.com/TheDavidDelta/lingva-translate">https://github.com/TheDavidDelta/lingva-translate</a></p>
+          <h3>LibreTranslate</h3>
+          <p>Free and Open Source Machine Translation API, entirely self-hosted.</p>
+          <p><a href="https://github.com/LibreTranslate/LibreTranslate">https://github.com/LibreTranslate/LibreTranslate</a></p>
+          <h4>Fandom</h4>
+          <h3>BreezeWiki</h3>
+          <p>BreezeWiki removes ads, videos, and suggested content, leaving you with a clean page that doesn't slow down your device or use up your data.</p>
+          <p><a href="https://breezewiki.com/">https://breezewiki.com</a></p>
+          <h4>Pintrest</h4>
+          <h3>Bintrest</h3>
+          <p>Bintrest allows you to browse pintrest without ads and annoying popups</p>
+          <p><a href="https://github.com/Ahwxorg/Binternet">https://github.com/Ahwxorg/Binternet</a></p>
+          <h4>Quora</h4>
+          <h3>Quetre</h3>
+          <p>Quetre is an alternative front-end to Quora. It enables you to see answers without ads, trackers, and other such bloat.</p>
+          <p><a href="https://github.com/zyachel/quetre">https://github.com/zyachel/quetre</a></p>
         </div>
-    </drp-d>
-  </ul>
-</div>
-
-<body>
-  <br>
-  <br>
-  <br>
-<div class="artprivwrapper">
-  <div class="container">
-    <h2></h2>
-    <p></p>
-  </div>
-  </div>
-</div>
-  <div class="footer">
-    <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
+      </div>
+    </div>
+    <br>
+    <div class="footer">
+      <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>
-    <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular" height="40"
+      <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular" height="40"
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/social/discord-singular_vector.svg"></a>
-    <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
+      <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/github_vector.svg"></a>
-    <a href="/rss.xml" class="footercont"><img alt="RSS" height="40" src="https://parilia.github.io/img/rss.svg"></a>
-  </div>
-</body>
-
+      <a href="/rss.xml" class="footercont"><img alt="RSS" height="40" src="https://parilia.github.io/img/rss.svg"></a>
+    </div>
+  </body>
 </html>

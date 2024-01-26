@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A guide to keeping safe online</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+  </head>
+  <div class="banner">
+    <img src="/img/banner.png">
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <!--<li><a href="https://github.com/Parilia/parilia.github.io/discussions">Contact</a></li>-->
+      <li><a href="/about">About</a></li>
+      <drp-d>
+        <li class="dropdown">
+          <a href="#" class="dropbtn" role="button" data-toggle="dropdown">Articles</a>
+          <div class="dropdown-menu">
+            <a href="/a/linux">Linux</a>
+            <a href="/a/gaming">Gaming</a>
+            <a href="/a/privacy">Privacy</a>
+            <a href="/a/web">Web</a>
+          </div>
+        </drp-d>
+      </ul>
+    </div>
+    <body>
+      <br>
+      <br>
+      <br>
+      <div class="artprivwrapper">
+        <div class="container">
+          <h2>A guide to keeping safe online</h2>
+          <p>
+            Keeping safe and secure online is very important and whether you are hiding from privacy invasive big tech or you are hiding your activities
+            from the state, this guide should be a good starting point for you. 
+          </p>
+          <h3>DNS</h3>
+          <p>
+            Mulvad DNS is my preferred DNS (domain name system), a DNS is the system that converts website domain names (hostnames) into numerical 
+            values (IP address) so they can be found and loaded into your web browser. Usually it is handled by your isp but you can change it if you
+            want, you can use it to block ads, trackers, malware, social media and adult content. 
+          </p>
+          <p>
+            It can be applied to most browsers though shouldn't be solely relied upon for safety, it can also be applied to most routers if you want to
+            block content for all devices connected to it. 
+          </p>
+          <p>
+            <a href="https://mullvad.net/en/help/dns-over-https-and-dns-over-tls">https://mullvad.net/en/help/dns-over-https-and-dns-over-tls</a>
+          </p>
+          <h4>Two Factor Authentication (2FA)</h4>
+          <p>
+            2FA is when you need to enter a code displayed on another device (usually your phone) along with you username and password.
+            I am hesitant to recommend a particular app so you can do your own research on this one for your particular device. If you arent using 
+            2FA then you should be and you should be using an app for it not texts or emails as these can be hacked. 
+          </p>
+          <h4>Browsers</h4>
+          <h3>Tor</h3>
+          <p>
+            The Tor browser is for those people looking to protect themselves against tracking, surveillance and censorship. Tor works by sending your 
+            traffic through three random servers in the Tor network. The last relay in the circuit (the "exit relay") then sends 
+            the traffic out onto the public Internet.
+          </p>
+          <p>
+            By default, Tor Browser does not keep any browsing history. Cookies are only valid for a single session (until Tor Browser is exited or 
+            a New Identity is requested).By default, Tor Browser does not keep any browsing history. 
+            Cookies are only valid for a single session (until Tor Browser is exited or a New Identity is requested).
+          </p>
+          <p>
+            For more information visit: <a href="https://www.torproject.org/">https://www.torproject.org</a>
+          </p>
+          <h3>Firefox</h3>
+          <p>
+            I would first like to justify why Firefox and not fork of it such as Librewolf. Put simply its trust, you already have to trust Mozilla (Firefox)
+            and I would rather not have to trust another organisation on top of that. All Librewolf does is harden Firefox and that isn't hard to do as you
+            will see below...
+          </p>
+          <p>
+            <a href="https://www.mozilla.org/en-GB/firefox/new/">https://www.mozilla.org/en-GB/firefox/new/</a>
+          </p>
+          <h4>Firefox Extensions</h4>
+          <h3>uBlock Origin</h3>
+          <p>
+            uBlock is a wide spectrum content blocker, it is free and open source. By default it blocks ads, trackers, malicious sites and popups.
+            This extension is the bare minimum to keep your browsing experience a safe and pleasant one, although out of the box it works fine for 
+            most, I strongly recommend these additional settings:
+          </p>
+          <img src="/img/firefox/ublock.png" class="shadow">
+          <p>
+            <a href="https://ublockorigin.com/">https://ublockorigin.com</a>
+          </p>
+          <h3>Ghostery</h3>
+          <p>
+            Ghostery is not as good or as powerful as uBlock but it does have one great feature and that is "never consent", It allows you to block 
+            websites from asking for your consent to use cookies and thus removing that annoying and time consuming pain of hitting reject all.
+          </p>
+          <p>
+            <a href="https://www.ghostery.com/">https://www.ghostery.com</a>
+          </p>
+          <h3>Disable WebRTC</h3>
+          <p>
+            webrtc allows audio and video communication to work inside web pages by allowing direct peer-to-peer communication, eliminating the need to 
+            install plugins or download native apps. 
+          </p>
+          <p>
+            That would be really cool however webrtc also has the issue that it can leak exposing your ip address 
+            and even your local device address, this happens even if you have a VPN.
+            Advertisers, websites and even bad actors can use this information to track you. If you don't use it then turn it off, if you do use it then 
+            turn it off when you aren't using it. 
+          </p>
+          <p><a href="https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/">https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/</a></p>
+          <h4>Password Managers</h4>
+          <h3>Bitwarden</h3>
+          <p>
+            Bitwarden is a free and open source password manager and is what I would recommend for the average person, it does have some paid for
+            features but the core of it being a password manager is free. It is one of the most trusted password mangers and all the information stored 
+            on it is encrypted with military grade encryption (AES-256 bit encryption).
+          </p>
+          <p>
+            <a href="https://bitwarden.com/">https://bitwarden.com</a>
+          </p>
+          <h3>KeePass</h3>
+          <p>
+            KeePass is a password manager that is offline, you store your passwords locally. It is free, open source and much loved in the privacy 
+            community as you store your password in a locally encrypted database making very hard for your password to be stolen. The password are 
+            stored in a single file that is password protected and can be moved anywhere you want.
+          </p>
+          <p>For more information visit: <a href="https://keepass.info/">https://keepass.info</a></p>
+          <h4>Virtual Private Networks (VPN)</h4>
+          <h3>Mulvad</h3>
+          <p>
+            It should come as no surprise that my preferred VPN is Mulvad, not only is it one of the most trusted VPN services it is also a 
+            flat rate of $5 and you only pay for a month at a time, none of this getting locked into a expensive subscription.
+          </p>
+          <p>
+            <a href="https://mullvad.net/en">https://mullvad.net/en</a>
+          </p>
+          <h3>IVPN</h3>
+          <p>
+            Another strong contender for best VPN is IVPN, it is generally well trusted and you can pay for only a day if you wish, 
+            although it can become pricey if you want it more long term. 
+          </p>
+          <p>
+            <a href="https://www.ivpn.net">https://www.ivpn.net</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>
+      <a href="https://discord.gg/2nf4AhVtTq" target="_blank" class="footercont"><img alt="discord-singular" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/social/discord-singular_vector.svg"></a>
+      <a href="https://github.com/Parilia" target="_blank" class="footercont"><img alt="github" height="40"
+        src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/github_vector.svg"></a>
+      <a href="/rss.xml" class="footercont"><img alt="RSS" height="40" src="https://parilia.github.io/img/rss.svg"></a>
+    </div>
+  </body>
+</html>

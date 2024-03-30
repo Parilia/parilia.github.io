@@ -7,6 +7,7 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <link rel="stylesheet" href="/styles.css">
   <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+  <link href="/prism.css" rel="stylesheet" />
 </head>
 <div class="banner">
   <img src="/img/banner.png">
@@ -29,6 +30,7 @@
 </div>
 
 <body>
+<script src="/prism.js"></script>
   <br>
   <br>
   <br>
@@ -61,7 +63,7 @@
       will install your non-steam game. This is added by right clicking the game in your steam library and selecting
       properties, add the below to your launch options.<br>
       <br>Steam Argument:<br>
-      <code>STEAM_COMPAT_DATA_PATH=place/path/here %command%</code><br>
+      <pre><code class="language-plain">STEAM_COMPAT_DATA_PATH=place/path/here %command%</code></pre><br>
       You should now be fine to run the installer, once the installer has finished installing the game or launcher then
       close it and move to the next step.
     </p>
@@ -72,9 +74,9 @@
     </p>
     <p>
       Target (This needs to be inside quotation marks as shown to work)
-      <code>"/mnt/Data/ESO/pfx/drive_c/Program Files (x86)/Zenimax Online/Launcher/Bethesda.net_Launcher.exe"</code>
+      <pre><code class="language-plain">"/mnt/Data/ESO/pfx/drive_c/Program Files (x86)/Zenimax Online/Launcher/Bethesda.net_Launcher.exe"</code></pre>
       Start in
-      <code>/mnt/Data/ESO/pfx/drive_c/Program Files (x86)/Zenimax Online/Launcher</code>
+      <pre><code class="language-plain">/mnt/Data/ESO/pfx/drive_c/Program Files (x86)/Zenimax Online/Launcher</code></pre>
       <br>
       You should now be able to run your game.
     </p>

@@ -6,6 +6,8 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+    <link href="/prism.css" rel="stylesheet" />
+
   </head>
   <div class="banner">
     <img src="/img/banner.png">
@@ -28,6 +30,7 @@
       </ul>
     </div>
     <body>
+    <script src="/prism.js"></script>
       <br>
       <br>
       <br>
@@ -44,7 +47,7 @@
           </p>
           <p>
             <pre>
-		  <code>
+		  <code class="language-plain">
 ## LSD ## https://github.com/lsd-rs/lsd
 alias ls="lsd -a"
 alias ll="lsd -lah"
@@ -65,7 +68,7 @@ alias tree="lsd --tree"
             <br>
             <img src="/img/commands/zoxide.png">
             <pre>
-		  <code>
+		  <code class="language-plain">
 z foo              # cd into highest ranked directory matching foo
 z foo bar          # cd into highest ranked directory matching foo and bar
 z foo /            # cd into a subdirectory starting with foo
@@ -89,7 +92,7 @@ z foo<SPACE><TAB>  # show interactive completions (zoxide v0.8.0+, bash 4.4+/fis
           </p>
           <p>
             <pre>
-		  <code>
+		  <code class="language-plain">
 # mkcd
 function mkcd {
   if [ ! -n "$1" ]; then

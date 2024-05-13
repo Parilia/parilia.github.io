@@ -241,6 +241,8 @@ h4 {
 
 }
 
+/* Gaming */
+
 .m-gamewrapper {
 	position: inherit;
 	background: linear-gradient(to bottom right, #c010ff 0%, #2528eb 100%);
@@ -313,6 +315,8 @@ h4 {
 	padding: 1%;
 }
 
+/* Linux */
+
 .m-linuxwrapper {
 	position: inherit;
 	background: linear-gradient(to bottom right, #1e9d8d 0%, #2563eb 100%);
@@ -384,6 +388,7 @@ h4 {
 	padding: 1%;
 }
 
+/* Web */
 
 .m-webwrapper {
 	position: inherit;
@@ -456,6 +461,8 @@ h4 {
 	padding: 1%;
 }
 
+/* Privacy */
+
 .m-privwrapper {
 	position: inherit;
 	background: linear-gradient(to bottom right, #c084fc 0, #4f46e5 100%);
@@ -527,6 +534,8 @@ h4 {
 	padding: 1%;
 }
 
+/* General */
+
 .genwrapper {
 	position: inherit;
 	background: linear-gradient(to bottom right, #a0dbe1 0, #3bc3d3 100%);
@@ -556,6 +565,80 @@ h4 {
 
 .section-gen-text-gradient {
 	background: linear-gradient(to bottom right, #a0dbe1 0, #3bc3d3 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-family: monospace;
+	font-size: 300%;
+	width: 100%;
+	text-align: center;
+	line-height: 20px;
+	padding: 1%;
+}
+
+/* Neo/vim */
+
+.m-vimwrapper {
+	position: inherit;
+	background: linear-gradient(to bottom right, #409ee3 0%, #4e9a39 100%);
+	width: 25%;
+	padding: 2px;
+	box-sizing: border-box;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 2% auto;
+	overflow: hidden;
+	border-color: transparent;
+}
+
+.vimwrapper {
+	position: inherit;
+	background: linear-gradient(to bottom right, #409ee3 0%, #4e9a39 100%);
+	width: 25%;
+	padding: 2px;
+	box-sizing: border-box;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 2% 2% 2% 2%;
+	flex-basis: 22%;
+	overflow: hidden;
+	border-color: transparent;
+
+}
+
+.artvimwrapper {
+	position: inherit;
+	background: linear-gradient(to bottom right, #409ee3 0%, #4e9a39 100%);
+	width: 60%;
+	padding: 2px;
+	box-sizing: border-box;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 2% auto;
+	overflow: hidden;
+	border-color: transparent;
+}
+
+.vim-text-gradient {
+	background: linear-gradient(to bottom right, #409ee3 0%, #4e9a39 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-family: monospace;
+	font-size: 300%;
+	width: 100%;
+	text-align: center;
+	line-height: 20px;
+}
+
+.section-vim-text-gradient {
+	background: linear-gradient(to bottom right, #409ee3 0%, #4e9a39 100%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;

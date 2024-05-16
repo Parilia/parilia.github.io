@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Neo/Vim</title>
+    <title>Neo/Vim System Clipboard</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Parilia" />
+    <link href="/prism.css" rel="stylesheet" />
   </head>
   <div class="banner">
     <img src="/img/banner.png">
@@ -28,46 +29,30 @@
       </ul>
     </div>
     <body>
+      <script src="/prism.js"></script>
       <br>
       <br>
       <br>
-      <div class="center">
-        <h1 class="section-vim-text-gradient">Neo/Vim</h1>
-      </div>
-      <div class="index">
-        <!-- <div class="vimwrapper">
-          <div class="container">
-            <a href="/a/neovim"></a>
-            <br>
-            <br>
-            Description
-          </div>
-        </div> -->
-        <div class="vimwrapper">
-          <div class="container">
-            <a href="/a/neovim/sys-clipboard">System clipboard in Neo/Vim</a>
-            <br>
-            <br>
-            Learn how to use the system clipboard with neo/vim.
-          </div>
-        </div>
-        <div class="vimwrapper">
-          <div class="container">
-            <a href="/a/neovim/spellcheck">Spell Check in Neo/Vim</a>
-            <br>
-            <br>
-            Learn how to setup spell checking in neo/vim. 
-          </div>
+      <div class="artvimwrapper">
+        <div class="container">
+          <h2>System Clipboard</h2>
+          <p>If you want to use the system clipboard when you copy (or yank) then its pretty easy in neovim but can be complicated when it comes to vim.</p>
+          <p>With Neovim</p>
+          <pre><code class="language-lua">vim.o.clipboard = 'unnamedplus'</code></pre>
+          <p>Vim as I said can be a little more complicated depending on the vim package you have installed but I will cover that a little further below. First however lets check if you need to change your package:</p>
+          <p>If you run the following:</p>
+          <pre><code class="language-vim">:echo has('clipboard')</code></pre>
+          <p>If it returned a 1 then that's great and you can add the following to your .vimrc</p>
+          <pre><code class="language-vim">set clipboard=unnamedplus</code></pre>
+          <p>If it returned a 0 then you will need to look for a package that supports the system clipboard on your OS or although I do not recommend this for newer users; compile it with the clipboard option. Once you have the correct package then run the above command again and add the required setting to your .vimrc.</p>
+          <p>These packages are known to work with the clipboard:</p>
+          <ul>
+            <li>Fedora: vim-X11 You will need to add alias vim="vimx" to your .bashrc or .zshrc</li>
+            <li>Ubuntu: vim-gnome, vim-gtk, vim-athena</li>
+            <li>Arch: gvim</li>
+          </ul>
         </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
       <div class="footer">
         <a href="https://modrinth.com/user/Parilia" target="_blank" class="footercont"><img alt="modrinth" height="40"
         src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact-minimal/available/modrinth_vector.svg"></a>

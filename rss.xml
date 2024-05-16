@@ -5,9 +5,9 @@
   <link>https://parilia.github.io/</link>
   <description>A place for my journey</description>
   <item>
-    <title>Spell checker in Neo/Vim</title>
-    <link>https://parilia.github.io/a/neovim/spellcheck</link>
-    <description>Learn how to setup spell checking in neo/vim.</description>
+    <title>System clipboard in Neo/Vim</title>
+    <link>https://parilia.github.io/a/neovim/sys-clipboard</link>
+    <description>Learn how to use the system clipboard with neo/vim.</description>
   </item>
 </channel>
 </rss> 
